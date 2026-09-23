@@ -1,0 +1,11 @@
+export func greet(name: String): String {
+    let cleaned: String = name.trim()
+    if cleaned == "" {
+        return "Hello, stranger!"
+    }
+    return "Hello, " + cleaned + "!"
+}
+
+export func isBlank(value: String): Bool {
+    return value.trim() == ""
+}

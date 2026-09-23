@@ -1,0 +1,17 @@
+test "greet a name" {
+    assert greet("Craft") == "Hello, Craft!"
+}
+
+test "trim surrounding whitespace" {
+    assert greet("  Craft  ") == "Hello, Craft!"
+}
+
+test "blank name uses a fallback" {
+    assert greet("") == "Hello, stranger!"
+    assert greet(" \t\n") == "Hello, stranger!"
+}
+
+test "detect blank text" {
+    assert isBlank(" \t\n")
+    assert !isBlank("Craft")
+}

@@ -1,0 +1,7 @@
+.env
+.env.*
+*.clixml
+.local/
+dist/
+build/
+*.log

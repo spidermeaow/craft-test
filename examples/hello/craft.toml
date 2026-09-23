@@ -1,0 +1,7 @@
+name = "hello-consumer"
+version = "0.1.0"
+edition = "2026"
+entry = "main"
+
+[dependencies]
+greeting = { path = "../..", version = "1.0.0" }
